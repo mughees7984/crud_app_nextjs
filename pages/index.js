@@ -1,6 +1,6 @@
 
 import Head from 'next/head'
-import { BiUserPlus, BiX, BiCheck } from "react-icons/bi";
+import { BiCheck, BiUserPlus, BiX } from "react-icons/bi";
 import Table from '../components/table';
 import Form from '../components/form';
 import { useState } from 'react';
