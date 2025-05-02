@@ -3,7 +3,7 @@ import { getUsers } from "../lib/helper";
 import { useQuery } from "@tanstack/react-query";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteAction, toggleChangeAction, updateAction } from "../redux/reducer";
-
+import Image from "next/image";
 export default function Table() {
   const { isLoading, isError, data, error } = useQuery({
     queryKey: ["users"],
@@ -63,7 +63,7 @@ function Tr({ _id, name, avatar, email, salary, date, status }) {
   return (
     <tr className="bg-gray-50 text-center">
       <td className="px-16 py-2 flex flex-row items-center">
-        <img
+        <Image
           src={avatar || "#"}
           alt=""
           className="w-8 h-8 rounded-full object-cover"
