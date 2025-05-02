@@ -63,7 +63,7 @@ function Tr({ _id, name, avatar, email, salary, date, status }) {
   return (
     <tr className="bg-gray-50 text-center">
       <td className="px-16 py-2 flex flex-row items-center">
-        <Image
+        <img
           src={avatar || "#"}
           alt=""
           className="w-8 h-8 rounded-full object-cover"
