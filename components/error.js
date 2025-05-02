@@ -1,3 +1,6 @@
+import { BiCheck } from "react-icons/bi";
+
+
 export default function Error ({ message }){
     return (
         <div className="success container mx-auto">
